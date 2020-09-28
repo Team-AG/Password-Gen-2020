@@ -1,0 +1,371 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.container{
+    height: 100vh;
+    width: 100%;
+    background-image: url("../images/Car.jpg");
+    background-position: center;
+    background-size: cover;
+    padding-left: 5%;
+    padding-right: 5%;
+    box-sizing: border-box;
+    position: relative;
+
+}
+
+.navbar{
+    width: 100%;
+    height: 15vh;
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
+
+.logo{
+    width: 220px;
+    cursor: pointer;
+}
+
+.cart{
+    width: 40px;
+    cursor: pointer;
+}
+
+nav{
+    flex: 1;
+    padding-left: 60px;
+    display: flex; /* everything comes next to each other */
+    justify-content: space-around; /* shifts it center */
+    align-items: center; /* center nav vertically */
+    min-height: 6vh; /* Thickness of navbar */
+    background-color: none;
+}
+
+.nav-links{
+    display: flex; /* puts all nav links in a row */
+    justify-content: space-around; /* shifts center */
+    width: 37%; /* width of nav links */
+}
+
+.nav-links li{
+    list-style: none; /* removes bullet points */
+}
+
+.nav-links a{
+    color: rgb(255, 255, 255); /* nav links color */
+    text-decoration: none; /* removes decoration */
+    letter-spacing: 3px; /* nav links spacing */
+    font-weight: lighter; /* nav links font style */
+    font-size: 16px; /* nav links font size */
+}
+
+/* burger for nav bar */
+.burger {
+    display: none; /* hide navbar burger */
+    cursor: pointer; /* adds a pointer */
+}
+
+.burger div{
+    width: 25px;            /* width of navbar burger */
+    height: 3px;            /* height of navbar burger */
+    background-color: rgb(226, 226, 226); /* the color of navbar burger */
+    margin: 5px;           /* margin area of navbar burger */
+    transition: all 0.3s ease;
+
+}
+
+
+
+.content h1{
+    font-size: 60px;
+    font-weight: 100;
+    margin-top: 24px;
+    margin-bottom: 15px;
+    color: rgb(39, 163, 163);
+
+}
+
+.content p{
+    font-size: 15px;
+    font-weight: 100;
+    margin-top: 24px;
+    margin-bottom: 15px;
+    color: rgb(39, 163, 163);
+
+}
+
+.content{
+margin-left: 10%;
+margin-top: 10%;
+
+}
+/* content section */
+.content .btn{
+    display: inline-block;
+    background: linear-gradient(45deg, rgb(39, 163, 163), black);
+    border-radius: 6px;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: white;
+    box-shadow: 3px 8px 22px rgba(94,28,68,0.15);
+
+}
+.arrow-icons{
+    margin-top: 40px;
+    display: flex;
+}
+.arrow-icons img{
+    width: 40px;
+    margin-right: 25px;
+}
+
+.social-links{
+    transform: rotate(-90deg);
+    position: absolute;
+    left: absolute;
+    bottom: 180px;
+
+}
+.social-links a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    padding-right: 20px;
+    font-size: 14px;
+}
+
+
+/* footer Section Start */
+/*footer style Section Start*/
+footer {
+    background-color: rgb(39, 163, 163);
+    border-top: none;
+    clear:both;
+    box-sizing: border-box;
+    height: 10px;
+    overflow: hidden;}
+/* copy right Section */
+.own-it {
+        margin-left: 50%;
+        margin-top: 0;
+        color: white;
+        font-size: 8px;
+        line-height: 1;
+        padding-top:0.5px;}
+/*footer style Section End*/
+
+/* Media queries */
+
+@media screen and (max-width: 3840px){
+    .nav-links{
+        width: 90%;
+        right: 0px;
+        position: absolute;
+        display: flex; /* puts all nav links in a row */
+        align-items: center;
+        padding: 0;
+    }
+
+}
+
+@media screen and (max-width: 1920px){
+    .nav-links{
+        width: 85%;
+        right: 0px;
+        position: absolute;
+        display: flex; /* puts all nav links in a row */
+        align-items: center;
+        padding: 0;
+    }
+
+}
+
+@media screen and (max-width: 1216px){
+    .nav-links{
+        width: 80%;
+        right: 0px;
+        position: absolute;
+        display: flex; /* puts all nav links in a row */
+        align-items: center;
+        padding: 0;
+    }
+
+}
+
+@media screen and (max-width: 1024px){
+    .nav-links{
+        width: 72%;
+        right: 0px;
+        position: absolute;
+        display: flex; /* puts all nav links in a row */
+        align-items: center;
+        padding: 0;
+    }
+
+}
+/* Mobile Devices */
+@media screen and (max-width: 768px){
+    
+    body{
+        overflow-x: hidden;
+    }
+
+    /* Mobile nav links */
+    .nav-links{
+        position: absolute;
+        right: 0px;
+        height: 92vh;
+        top: 8vh;
+        background-color: none;
+        display: flex; /* puts all nav links in a row */
+        flex-direction: column;
+        align-items: center;
+        width: 30%;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in; /* slower time added to navbar */
+    }
+
+    nav.links li{
+        opacity: 0;
+    }
+
+    .burger{
+        display: block;
+
+    }
+}
+/* iphone 11 */
+@media only screen 
+    and (device-width: 414px) 
+    and (device-height: 896px) 
+    and (-webkit-device-pixel-ratio: 2) {  
+        
+        body{
+        overflow-x: hidden;
+    }
+
+    /* Mobile nav links */
+    .nav-links{
+        position: absolute;
+        right: 0px;
+        height: 92vh;
+        top: 8vh;
+        background-color: none;
+        display: flex; /* puts all nav links in a row */
+        flex-direction: column;
+        align-items: center;
+        width: 30%;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in; /* slower time added to navbar */
+    }
+
+    nav.links li{
+        opacity: 0;
+    }
+
+    .burger{
+        display: block;
+
+    }
+     }
+
+/* iphone 11 pro */
+     @media only screen 
+     and (device-width: 375px) 
+     and (device-height: 812px) 
+     and (-webkit-device-pixel-ratio: 3) {
+        body{
+            overflow-x: hidden;
+        }
+    
+        /* Mobile nav links */
+        .nav-links{
+            position: absolute;
+            right: 0px;
+            height: 92vh;
+            top: 8vh;
+            background-color: none;
+            display: flex; /* puts all nav links in a row */
+            flex-direction: column;
+            align-items: center;
+            width: 30%;
+            transform: translateX(100%);
+            transition: transform 0.5s ease-in; /* slower time added to navbar */
+        }
+    
+        nav.links li{
+            opacity: 0;
+        }
+    
+        .burger{
+            display: block;
+    
+        }
+      } 
+
+      /* iphone 11 Pro Max */
+      @media only screen 
+      and (device-width: 414px) 
+      and (device-height: 896px) 
+      and (-webkit-device-pixel-ratio: 3) {
+        body{
+            overflow-x: hidden;
+        }
+    
+        /* Mobile nav links */
+        .nav-links{
+            position: absolute;
+            right: 0px;
+            height: 92vh;
+            top: 8vh;
+            background-color: none;
+            display: flex; /* puts all nav links in a row */
+            flex-direction: column;
+            align-items: center;
+            width: 30%;
+            transform: translateX(100%);
+            transition: transform 0.5s ease-in; /* slower time added to navbar */
+        }
+    
+        nav.links li{
+            opacity: 0;
+        }
+    
+        .burger{
+            display: block;
+    
+        }
+       }
+
+.nav-active{
+    transform: translateX(0%);
+}
+
+/* building out a animation */
+
+@keyframes navLinkFade{
+    from{
+        opacity: 0;
+        transform: translateX(50px); /* adds movement */
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+    
+}
+
+.toggle .line1{
+    transform: rotate(-45deg) translate(-5px,6px);
+}
+.toggle .line2{
+    opacity: 0;   
+}
+.toggle .line3{
+    transform: rotate(45deg) translate(-5px,-6px);
+}
